@@ -6,62 +6,12 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		7BEEB91628FE400400B0334A /* CleanArchitectureMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEB91528FE400400B0334A /* CleanArchitectureMobileApp.swift */; };
-		7BEEB91828FE400400B0334A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEB91728FE400400B0334A /* ContentView.swift */; };
-		7BEEB91A28FE400500B0334A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEB91928FE400500B0334A /* Assets.xcassets */; };
-		7BEEB91D28FE400500B0334A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEEB91C28FE400500B0334A /* Preview Assets.xcassets */; };
-		7BEEB92728FE400500B0334A /* CleanArchitectureMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEB92628FE400500B0334A /* CleanArchitectureMobileTests.swift */; };
-		7BEEB93128FE400500B0334A /* CleanArchitectureMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEB93028FE400500B0334A /* CleanArchitectureMobileUITests.swift */; };
-		7BEEB93328FE400500B0334A /* CleanArchitectureMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEB93228FE400500B0334A /* CleanArchitectureMobileUITestsLaunchTests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7BEEB92328FE400500B0334A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7BEEB90A28FE400400B0334A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7BEEB91128FE400400B0334A;
-			remoteInfo = CleanArchitectureMobile;
-		};
-		7BEEB92D28FE400500B0334A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7BEEB90A28FE400400B0334A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7BEEB91128FE400400B0334A;
-			remoteInfo = CleanArchitectureMobile;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		7BEEB91228FE400400B0334A /* CleanArchitectureMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BEEB91528FE400400B0334A /* CleanArchitectureMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureMobileApp.swift; sourceTree = "<group>"; };
-		7BEEB91728FE400400B0334A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7BEEB91928FE400500B0334A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7BEEB91C28FE400500B0334A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7BEEB92228FE400500B0334A /* CleanArchitectureMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BEEB92628FE400500B0334A /* CleanArchitectureMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureMobileTests.swift; sourceTree = "<group>"; };
-		7BEEB92C28FE400500B0334A /* CleanArchitectureMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BEEB93028FE400500B0334A /* CleanArchitectureMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureMobileUITests.swift; sourceTree = "<group>"; };
-		7BEEB93228FE400500B0334A /* CleanArchitectureMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7BEEB9442919E5E900B0334A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7BEEB90F28FE400400B0334A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BEEB91F28FE400500B0334A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BEEB92928FE400500B0334A /* Frameworks */ = {
+		7BEEB9412919E5E900B0334A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,9 +24,7 @@
 		7BEEB90928FE400400B0334A = {
 			isa = PBXGroup;
 			children = (
-				7BEEB91428FE400400B0334A /* CleanArchitectureMobile */,
-				7BEEB92528FE400500B0334A /* CleanArchitectureMobileTests */,
-				7BEEB92F28FE400500B0334A /* CleanArchitectureMobileUITests */,
+				7BEEB9452919E5E900B0334A /* Domain */,
 				7BEEB91328FE400400B0334A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,104 +32,48 @@
 		7BEEB91328FE400400B0334A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEB91228FE400400B0334A /* CleanArchitectureMobile.app */,
-				7BEEB92228FE400500B0334A /* CleanArchitectureMobileTests.xctest */,
-				7BEEB92C28FE400500B0334A /* CleanArchitectureMobileUITests.xctest */,
+				7BEEB9442919E5E900B0334A /* Domain.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BEEB91428FE400400B0334A /* CleanArchitectureMobile */ = {
+		7BEEB9452919E5E900B0334A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEB91528FE400400B0334A /* CleanArchitectureMobileApp.swift */,
-				7BEEB91728FE400400B0334A /* ContentView.swift */,
-				7BEEB91928FE400500B0334A /* Assets.xcassets */,
-				7BEEB91B28FE400500B0334A /* Preview Content */,
 			);
-			path = CleanArchitectureMobile;
-			sourceTree = "<group>";
-		};
-		7BEEB91B28FE400500B0334A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				7BEEB91C28FE400500B0334A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7BEEB92528FE400500B0334A /* CleanArchitectureMobileTests */ = {
-			isa = PBXGroup;
-			children = (
-				7BEEB92628FE400500B0334A /* CleanArchitectureMobileTests.swift */,
-			);
-			path = CleanArchitectureMobileTests;
-			sourceTree = "<group>";
-		};
-		7BEEB92F28FE400500B0334A /* CleanArchitectureMobileUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7BEEB93028FE400500B0334A /* CleanArchitectureMobileUITests.swift */,
-				7BEEB93228FE400500B0334A /* CleanArchitectureMobileUITestsLaunchTests.swift */,
-			);
-			path = CleanArchitectureMobileUITests;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7BEEB93F2919E5E900B0334A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		7BEEB91128FE400400B0334A /* CleanArchitectureMobile */ = {
+		7BEEB9432919E5E900B0334A /* Domain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BEEB93628FE400500B0334A /* Build configuration list for PBXNativeTarget "CleanArchitectureMobile" */;
+			buildConfigurationList = 7BEEB9482919E5E900B0334A /* Build configuration list for PBXNativeTarget "Domain" */;
 			buildPhases = (
-				7BEEB90E28FE400400B0334A /* Sources */,
-				7BEEB90F28FE400400B0334A /* Frameworks */,
-				7BEEB91028FE400400B0334A /* Resources */,
+				7BEEB93F2919E5E900B0334A /* Headers */,
+				7BEEB9402919E5E900B0334A /* Sources */,
+				7BEEB9412919E5E900B0334A /* Frameworks */,
+				7BEEB9422919E5E900B0334A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CleanArchitectureMobile;
-			productName = CleanArchitectureMobile;
-			productReference = 7BEEB91228FE400400B0334A /* CleanArchitectureMobile.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7BEEB92128FE400500B0334A /* CleanArchitectureMobileTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7BEEB93928FE400500B0334A /* Build configuration list for PBXNativeTarget "CleanArchitectureMobileTests" */;
-			buildPhases = (
-				7BEEB91E28FE400500B0334A /* Sources */,
-				7BEEB91F28FE400500B0334A /* Frameworks */,
-				7BEEB92028FE400500B0334A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7BEEB92428FE400500B0334A /* PBXTargetDependency */,
-			);
-			name = CleanArchitectureMobileTests;
-			productName = CleanArchitectureMobileTests;
-			productReference = 7BEEB92228FE400500B0334A /* CleanArchitectureMobileTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		7BEEB92B28FE400500B0334A /* CleanArchitectureMobileUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7BEEB93C28FE400500B0334A /* Build configuration list for PBXNativeTarget "CleanArchitectureMobileUITests" */;
-			buildPhases = (
-				7BEEB92828FE400500B0334A /* Sources */,
-				7BEEB92928FE400500B0334A /* Frameworks */,
-				7BEEB92A28FE400500B0334A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7BEEB92E28FE400500B0334A /* PBXTargetDependency */,
-			);
-			name = CleanArchitectureMobileUITests;
-			productName = CleanArchitectureMobileUITests;
-			productReference = 7BEEB92C28FE400500B0334A /* CleanArchitectureMobileUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = Domain;
+			productName = Domain;
+			productReference = 7BEEB9442919E5E900B0334A /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,16 +85,8 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					7BEEB91128FE400400B0334A = {
+					7BEEB9432919E5E900B0334A = {
 						CreatedOnToolsVersion = 14.0;
-					};
-					7BEEB92128FE400500B0334A = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 7BEEB91128FE400400B0334A;
-					};
-					7BEEB92B28FE400500B0334A = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 7BEEB91128FE400400B0334A;
 					};
 				};
 			};
@@ -219,31 +103,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7BEEB91128FE400400B0334A /* CleanArchitectureMobile */,
-				7BEEB92128FE400500B0334A /* CleanArchitectureMobileTests */,
-				7BEEB92B28FE400500B0334A /* CleanArchitectureMobileUITests */,
+				7BEEB9432919E5E900B0334A /* Domain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7BEEB91028FE400400B0334A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7BEEB91D28FE400500B0334A /* Preview Assets.xcassets in Resources */,
-				7BEEB91A28FE400500B0334A /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BEEB92028FE400500B0334A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BEEB92A28FE400500B0334A /* Resources */ = {
+		7BEEB9422919E5E900B0334A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,46 +119,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7BEEB90E28FE400400B0334A /* Sources */ = {
+		7BEEB9402919E5E900B0334A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEEB91828FE400400B0334A /* ContentView.swift in Sources */,
-				7BEEB91628FE400400B0334A /* CleanArchitectureMobileApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BEEB91E28FE400500B0334A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7BEEB92728FE400500B0334A /* CleanArchitectureMobileTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7BEEB92828FE400500B0334A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7BEEB93128FE400500B0334A /* CleanArchitectureMobileUITests.swift in Sources */,
-				7BEEB93328FE400500B0334A /* CleanArchitectureMobileUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7BEEB92428FE400500B0334A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7BEEB91128FE400400B0334A /* CleanArchitectureMobile */;
-			targetProxy = 7BEEB92328FE400500B0334A /* PBXContainerItemProxy */;
-		};
-		7BEEB92E28FE400500B0334A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7BEEB91128FE400400B0334A /* CleanArchitectureMobile */;
-			targetProxy = 7BEEB92D28FE400500B0334A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7BEEB93428FE400500B0334A /* Debug */ = {
@@ -409,137 +243,67 @@
 			};
 			name = Release;
 		};
-		7BEEB93728FE400500B0334A /* Debug */ = {
+		7BEEB9492919E5E900B0334A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CleanArchitectureMobile/Preview Content\"";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U2RRJBJ9M2;
-				ENABLE_PREVIEWS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gomes-matheus.CleanArchitectureMobile";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = JausTechnology.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7BEEB93828FE400500B0334A /* Release */ = {
+		7BEEB94A2919E5E900B0334A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CleanArchitectureMobile/Preview Content\"";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U2RRJBJ9M2;
-				ENABLE_PREVIEWS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gomes-matheus.CleanArchitectureMobile";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = JausTechnology.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		7BEEB93A28FE400500B0334A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U2RRJBJ9M2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gomes-matheus.CleanArchitectureMobileTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchitectureMobile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanArchitectureMobile";
-			};
-			name = Debug;
-		};
-		7BEEB93B28FE400500B0334A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U2RRJBJ9M2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gomes-matheus.CleanArchitectureMobileTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArchitectureMobile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanArchitectureMobile";
-			};
-			name = Release;
-		};
-		7BEEB93D28FE400500B0334A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U2RRJBJ9M2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gomes-matheus.CleanArchitectureMobileUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CleanArchitectureMobile;
-			};
-			name = Debug;
-		};
-		7BEEB93E28FE400500B0334A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U2RRJBJ9M2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "gomes-matheus.CleanArchitectureMobileUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CleanArchitectureMobile;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -555,29 +319,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BEEB93628FE400500B0334A /* Build configuration list for PBXNativeTarget "CleanArchitectureMobile" */ = {
+		7BEEB9482919E5E900B0334A /* Build configuration list for PBXNativeTarget "Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BEEB93728FE400500B0334A /* Debug */,
-				7BEEB93828FE400500B0334A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7BEEB93928FE400500B0334A /* Build configuration list for PBXNativeTarget "CleanArchitectureMobileTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7BEEB93A28FE400500B0334A /* Debug */,
-				7BEEB93B28FE400500B0334A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7BEEB93C28FE400500B0334A /* Build configuration list for PBXNativeTarget "CleanArchitectureMobileUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7BEEB93D28FE400500B0334A /* Debug */,
-				7BEEB93E28FE400500B0334A /* Release */,
+				7BEEB9492919E5E900B0334A /* Debug */,
+				7BEEB94A2919E5E900B0334A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
