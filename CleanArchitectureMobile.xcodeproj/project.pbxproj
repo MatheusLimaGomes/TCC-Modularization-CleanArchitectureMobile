@@ -6,8 +6,15 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7BEEB94C2919E65F00B0334A /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEB94B2919E65F00B0334A /* AddAccount.swift */; };
+		7BEEB94E2919E78800B0334A /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEB94D2919E78800B0334A /* AccountModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7BEEB9442919E5E900B0334A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEEB94B2919E65F00B0334A /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		7BEEB94D2919E78800B0334A /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,8 @@
 		7BEEB9452919E5E900B0334A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				7BEEB94B2919E65F00B0334A /* AddAccount.swift */,
+				7BEEB94D2919E78800B0334A /* AccountModel.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -87,6 +96,7 @@
 				TargetAttributes = {
 					7BEEB9432919E5E900B0334A = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -123,6 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BEEB94C2919E65F00B0334A /* AddAccount.swift in Sources */,
+				7BEEB94E2919E78800B0334A /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +258,7 @@
 		7BEEB9492919E5E900B0334A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -269,6 +282,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -278,6 +292,7 @@
 		7BEEB94A2919E5E900B0334A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
