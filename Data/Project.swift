@@ -23,7 +23,7 @@ let project = Project(
             platform: .macOS,
             product: .framework,
             bundleId: "\(organizationName).data",
-            infoPlist: .default,
+            infoPlist: .dictionary(infoPlist),
             sources: ["Source/"],
             resources: ["Resource/"])
     ]
