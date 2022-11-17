@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				7B7D1D1D2925C3320006EA36 /* Data.docc */,
-				7B7D1D392925D6C60006EA36 /* RemoteAddAccount.swift */,
-				7B7D1D3B2925D7050006EA36 /* HttpPostClient.swift */,
+				7B7D1D3F2925D8940006EA36 /* UseCases */,
+				7B7D1D402925D8B00006EA36 /* Http */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 		7B7D1D272925C3330006EA36 /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				7B7D1D282925C3330006EA36 /* RemoteAddAccountTests.swift */,
+				7B7D1D412925D8BE0006EA36 /* UseCases */,
 			);
 			path = DataTests;
 			sourceTree = "<group>";
@@ -113,6 +113,47 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B7D1D3D2925D8670006EA36 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7BEEB94B2919E65F00B0334A /* AddAccount.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7B7D1D3E2925D8780006EA36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BEEB94D2919E78800B0334A /* AccountModel.swift */,
+				7B7D1D372925D6980006EA36 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B7D1D3F2925D8940006EA36 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7B7D1D392925D6C60006EA36 /* RemoteAddAccount.swift */,
+			);
+			name = UseCases;
+			sourceTree = "<group>";
+		};
+		7B7D1D402925D8B00006EA36 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				7B7D1D3B2925D7050006EA36 /* HttpPostClient.swift */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		7B7D1D412925D8BE0006EA36 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				7B7D1D282925C3330006EA36 /* RemoteAddAccountTests.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		7BEEB90928FE400400B0334A = {
@@ -139,9 +180,8 @@
 		7BEEB9452919E5E900B0334A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				7BEEB94B2919E65F00B0334A /* AddAccount.swift */,
-				7BEEB94D2919E78800B0334A /* AccountModel.swift */,
-				7B7D1D372925D6980006EA36 /* Model.swift */,
+				7B7D1D3D2925D8670006EA36 /* UseCases */,
+				7B7D1D3E2925D8780006EA36 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
