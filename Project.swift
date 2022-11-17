@@ -3,19 +3,15 @@ import ProjectDescription
 let organizationName = "br.com.Jaus-Technology"
 let project = Project(
     name: "CleanArchitectureMobile",
-    organizationName: organizationName,
-    settings: nil, 
     targets: [
         Target(
             name: "Domain",
             platform: .macOS,
             product: .framework,
             bundleId: "\(organizationName).domain",
-            infoPlist: "Domain/Info.plist",
+            infoPlist: "Domain/Resource/",
             sources: ["Domain/Source/**"],
-            resources: ["Domain/Resource/**"],
-            dependencies: [],
-            settings: nil
+            resources: ["Domain/Resource/**"]
         )
     ]
 )
