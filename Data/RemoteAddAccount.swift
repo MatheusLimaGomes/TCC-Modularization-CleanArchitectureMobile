@@ -11,7 +11,7 @@ import Domain
 public final class RemoteAddAccount: AddAccount {
     private var url: URL
     private var httpClient: HttpPostClient
-    public init(url: URL, httpClient: HttpPostClient) {
+    init(url: URL, httpClient: HttpPostClient) {
         self.url = url
         self.httpClient = httpClient
     }

@@ -58,38 +58,8 @@ final class RemoteAddAccountTests: XCTestCase {
 }
 
 extension RemoteAddAccountTests {
-    class HttpClientSpy: HttpPostClient {
-        var urls: [URL] = [URL]()
-        var data: Data?
-        var completion: ((Result <Data, HttpError>) -> Void)?
-        
-        func post(to url: URL, with data: Data?, completion: @escaping  (Result <Data, HttpError>) -> Void) {
-            self.urls.append(url)
-            self.data = data
-            self.completion = completion
-        }
-        func completeWithError(_ error: HttpError) {
-            completion?(.failure(error))
-        }
-        func completeWithData(_ data: Data) {
-            completion?(.success(data))
-        }
-    }
     func makeAddAccountModel() -> AddAccountModel {
         AddAccountModel(name: "any name", email: "e-mail@maildomain.com", password: "secret", passwordConfirmation: "secret")
-    }
-    func makeAccountModel() -> AccountModel {
-        AccountModel(
-            id: "any_id",
-            name: "any name",
-            email: "mail@mail.com",
-            password: "secret")
-    }
-    func makeInvalidData() -> Data {
-        Data("invalid_data".utf8)
-    }
-    func makeURL() -> URL {
-        URL(string: "http://any-url.com")!
     }
     func makeSut(to url: URL = URL(string: "http://any-url.com")!, httpClient: HttpClientSpy = HttpClientSpy(), file: StaticString = #filePath, line: UInt = #line) -> (sut: RemoteAddAccount, httpClientSpy: HttpClientSpy) {
         let httpClient = HttpClientSpy()
@@ -97,11 +67,6 @@ extension RemoteAddAccountTests {
         checkMemoryLeak(for: sut, file: file, line: line)
         checkMemoryLeak(for: httpClient, file: file, line: line)
         return (sut: sut, httpClientSpy: httpClient)
-    }
-    func checkMemoryLeak(for instance: AnyObject, file: StaticString = #filePath, line: UInt = #line) {
-        addTeardownBlock { [weak instance] in
-            XCTAssertNil(instance, file: file, line: line)
-        }
     }
     func expect(sut: RemoteAddAccount, completeWith expectedResult: Result<AccountModel, DomainError>, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
         let exp = expectation(description: "wating")
