@@ -16,7 +16,6 @@ public final class RemoteAddAccount {
         self.httpClient = httpClient
     }
     func add(addAccountModel: AddAccountModel) {
-        let data = addAccountModel.toData()
-        httpClient.post(to: url, with: data)
+        httpClient.post(to: url, with: addAccountModel.toData())
     }
 }
