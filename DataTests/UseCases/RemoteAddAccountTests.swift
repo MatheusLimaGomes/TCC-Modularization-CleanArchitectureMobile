@@ -81,14 +81,14 @@ extension RemoteAddAccountTests {
     func makeSut(to url: URL = URL(string: "http://any-url.com")!, httpClient: HttpClientSpy = HttpClientSpy()) -> (sut: RemoteAddAccount, httpClientSpy: HttpClientSpy) {
         (sut: RemoteAddAccount(url: url, httpClient: httpClient), httpClientSpy: httpClient)
     }
-    func expect(sut: RemoteAddAccount, completeWith expectedResult: Result<AccountModel, DomainError>, when action: () -> Void) {
+    func expect(sut: RemoteAddAccount, completeWith expectedResult: Result<AccountModel, DomainError>, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
         let exp = expectation(description: "wating")
         sut.add(
             addAccountModel: makeAddAccountModel()) { receivedResult in
                 switch (expectedResult, receivedResult) {
-                case (.failure(let expectedError), .failure(let receivedError)): XCTAssertEqual(expectedError, receivedError)
-                case (.success(let expectedResult), .success(let receivedResult)): XCTAssertEqual(expectedResult, receivedResult)
-                default: XCTFail("Expected \(expectedResult) received \(receivedResult) instead!")
+                case (.failure(let expectedError), .failure(let receivedError)): XCTAssertEqual(expectedError, receivedError, file: file, line: line)
+                case (.success(let expectedResult), .success(let receivedResult)): XCTAssertEqual(expectedResult, receivedResult, file: file, line: line)
+                default: XCTFail("Expected \(expectedResult) received \(receivedResult) instead!", file: file, line: line)
                 }
                 exp.fulfill()
             }
