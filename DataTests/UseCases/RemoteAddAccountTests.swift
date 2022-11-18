@@ -23,17 +23,32 @@ final class RemoteAddAccountTests: XCTestCase {
         sut.add(addAccountModel: addAccountModelMock) { _ in }
         XCTAssertEqual(httpClientSpy.data, addAccountModelMock.toData())
     }
-    func test_should_complete_with_error_when_client_fails() {
+    func test_should_complete_with_error_when_complete_with_error() {
         let (sut, httpClientSpy) = makeSut()
         let exp = expectation(description: "wating client complete with fails")
         sut.add(addAccountModel: makeAddAccountModel()) { result in
             switch result {
                 case .failure(let error): XCTAssertEqual(error, .unexpected)
-                case .success: XCTFail("Expected an error receive \(result) instead!")
+                case .success: XCTFail("Expected an error received \(result) instead!")
             }
             exp.fulfill()
         }
         httpClientSpy.completeWithError(.noConnectivity)
+        wait(for: [exp], timeout: 1)
+    }
+    func test_should_complete_with_account_when_client_complete_with_data() {
+        let (sut, httpClientSpy) = makeSut()
+        let exp = expectation(description: "wating client complete with success")
+        let expectedAccount = makeAccountModel()
+        sut.add(addAccountModel: makeAddAccountModel()) { result in
+            switch result {
+            case .failure: XCTFail("Expected success received \(result) instead!")
+                case let .success(receivedAccount): XCTAssertEqual(receivedAccount, expectedAccount)
+            }
+            exp.fulfill()
+        }
+        httpClientSpy
+            .completeWithData(expectedAccount.toData()!)
         wait(for: [exp], timeout: 1)
     }
 }
@@ -52,9 +67,19 @@ extension RemoteAddAccountTests {
         func completeWithError(_ error: HttpError) {
             completion?(.failure(error))
         }
+        func completeWithData(_ data: Data) {
+            completion?(.success(data))
+        }
     }
     func makeAddAccountModel() -> AddAccountModel {
         AddAccountModel(name: "any name", email: "e-mail@maildomain.com", password: "secret", passwordConfirmation: "secret")
+    }
+    func makeAccountModel() -> AccountModel {
+        AccountModel(
+            id: "any_id",
+            name: "any name",
+            email: "mail@mail.com",
+            password: "secret")
     }
     func makeSut(to url: URL = URL(string: "http://any-url.com")!, httpClient: HttpClientSpy = HttpClientSpy()) -> (sut: RemoteAddAccount, httpClientSpy: HttpClientSpy) {
         (sut: RemoteAddAccount(url: url, httpClient: httpClient), httpClientSpy: httpClient)
