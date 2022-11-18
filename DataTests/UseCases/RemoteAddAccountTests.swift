@@ -23,7 +23,7 @@ final class RemoteAddAccountTests: XCTestCase {
         sut.add(addAccountModel: addAccountModelMock) { _ in }
         XCTAssertEqual(httpClientSpy.data, addAccountModelMock.toData())
     }
-    func test_shoud_complete_with_error_when_client_fails() {
+    func test_should_complete_with_error_when_client_fails() {
         let (sut, httpClientSpy) = makeSut()
         let exp = expectation(description: "wating client complete with fails")
         sut.add(addAccountModel: makeAddAccountModel()) { error in
