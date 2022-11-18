@@ -42,6 +42,19 @@ final class RemoteAddAccountTests: XCTestCase {
             httpClientSpy.completeWithData(makeInvalidData())
         })
     }
+    func test_should_not_complete_if_sut_has_been_dealocated() {
+        let httpClient = HttpClientSpy()
+        var sut: RemoteAddAccount? = RemoteAddAccount(
+            url: makeURL(),
+            httpClient: httpClient
+        )
+        var result: Result<AccountModel,DomainError>?
+        sut?.add(
+            addAccountModel: makeAddAccountModel()) { result = $0}
+        sut = nil
+        httpClient.completeWithError(.noConnectivity)
+        XCTAssertNil(result)
+    }
 }
 
 extension RemoteAddAccountTests {
